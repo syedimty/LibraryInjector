@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+        }
+        header{
+            border-bottom: 1px solid silver;
+            margin-bottom: 10px;
+        }
+        h3{
+            margin: 5px;
+            padding: 5px;
+        }
+        #buttons_holder div{
+            display: inline-block;
+            border-radius: 3px;
+            box-shadow: 0 4px 5px rgba(0,0,0,.3);
+            font-size : 14px;
+            text-shadow: 0 1px 1px rgba(255,255,255,.35);
+            padding: 5px 10px;
+            margin: 5px;
+            background: #65acc8;
+            background: linear-gradient(#65acc8, #4586ae);
+            border-top: 1px solid #a1cdde;
+            color: rgba(25,45,55,.9);
+        }
+
+        #buttons_holder div.selected {
+            color: white;
+            background: #BFBFBF;
+            text-shadow: none;
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+        @-webkit-keyframes slideDown {
+            0%, 100% { -webkit-transform: translateY(-50px); }
+            10%, 90% { -webkit-transform: translateY(0px); }
+        }
+
+        #note {
+            position: absolute;
+            z-index: 101;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fde073;
+            text-align: center;
+            line-height: 2.5;
+            overflow: hidden;
+            box-shadow:         0 0 5px black;
+            -webkit-transform: translateY(-50px);
+            -webkit-animation: slideDown 1s 0s 1 ease forwards;
+        }
+
+    </style>
+
+    <script src="predefined_libraries.js"></script>
+    <script src="myscript.js"></script>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+
+</head>
+<body>
+<header><h3>Library Injector</h3></header>
+
+<div id="buttons_holder">
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+{
+    "name": "Library Injector",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "This extension helps you to add any libraries to current active tab. U can even add any library of your choice. Happy coding !!",
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon": "icon.png"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["background.js"]
+        }
+    ],
+    "permissions": [
+        "http://*/*",
+        "storage",
+        "tabs"
+    ]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="jquery.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="bootstrap.min.js"></script>
+    <script src="options.js"></script>
+
+    <title>My Test Extension Options</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="row" style="margin-top: 10px">
+            <img src="icon.png" class="thumbnail" style="float: left; margin-right: 10px;"/>
+            <h3>Library Injector - Options</h3>
+        </div>
+        <div class="bs-component">
+            <div class="jumbotron">
+                <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add new library</div>
+                <div style="margin-top: 10px">
+                    <legend>User added Libraries</legend>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Library Name</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td data-toggle="modal" data-target="#myModal">edit</td>
+                            <td>delete</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td data-toggle="modal" data-target="#myModal">edit</td>
+                            <td>delete</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td data-toggle="modal" data-target="#myModal">edit</td>
+                            <td>delete</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add or Edit library</h4>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="libraryName" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="libraryName" placeholder="Library Name">
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="form-group">
+                        <label>Library Files</label>
+                        <div style="height: 300px; overflow: auto;">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>JS/CSS File url</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><input class="form-control"/></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+
+
+
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
